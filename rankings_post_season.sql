@@ -1,27 +1,27 @@
 CREATE TABLE RankingPostS(
-   player_id         INTEGER  NOT NULL
+   player_id         BIGINT  NOT NULL
   ,season_id         VARCHAR(7) NOT NULL
-  ,team_id           INTEGER  NOT NULL
+  ,team_id           BIGINT  NOT NULL
   ,team_abbreviation VARCHAR(3) NOT NULL
-  ,rank_min          INTEGER  NOT NULL
-  ,rank_fgm          INTEGER  NOT NULL
-  ,rank_fga          INTEGER  NOT NULL
+  ,rank_min          BIGINT  NOT NULL
+  ,rank_fgm          BIGINT  NOT NULL
+  ,rank_fga          BIGINT  NOT NULL
   ,rank_fg_pct       INTEGER 
-  ,rank_fg3m         INTEGER 
-  ,rank_fg3a         INTEGER 
+  ,rank_fg3m         BIGINT 
+  ,rank_fg3a         BIGINT 
   ,rank_fg3_pct      INTEGER 
-  ,rank_ftm          INTEGER  NOT NULL
-  ,rank_fta          INTEGER  NOT NULL
+  ,rank_ftm          BIGINT  NOT NULL
+  ,rank_fta          BIGINT  NOT NULL
   ,rank_ft_pct       INTEGER 
-  ,rank_oreb         INTEGER 
-  ,rank_dreb         INTEGER 
-  ,rank_reb          INTEGER  NOT NULL
-  ,rank_ast          INTEGER  NOT NULL
-  ,rank_stl          INTEGER 
-  ,rank_blk          INTEGER 
-  ,rank_tov          INTEGER 
-  ,rank_pts          INTEGER  NOT NULL
-  ,rank_efficiency   INTEGER  NOT NULL
+  ,rank_oreb         BIGINT 
+  ,rank_dreb         BIGINT 
+  ,rank_reb          BIGINT  NOT NULL
+  ,rank_ast          BIGINT  NOT NULL
+  ,rank_stl          BIGINT 
+  ,rank_blk          BIGINT 
+  ,rank_tov          BIGINT 
+  ,rank_pts          BIGINT  NOT NULL
+  ,rank_efficiency   BIGINT  NOT NULL
   ,PRIMARY KEY(player_id,season_id,team_id)
 );
 INSERT INTO RankingPostS(player_id,season_id,team_id,team_abbreviation,rank_min,rank_fgm,rank_fga,rank_fg_pct,rank_fg3m,rank_fg3a,rank_fg3_pct,rank_ftm,rank_fta,rank_ft_pct,rank_oreb,rank_dreb,rank_reb,rank_ast,rank_stl,rank_blk,rank_tov,rank_pts,rank_efficiency) VALUES (2,'1983-84',1610612747,'LAL',27,27,27,NULL,17,14,NULL,60,47,NULL,65,58,64,35,19,75,36,30,42);
