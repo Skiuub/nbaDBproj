@@ -3,7 +3,7 @@ CREATE TABLE players(
   ,full_name  VARCHAR(24) NOT NULL
   ,first_name VARCHAR(15)
   ,last_name  VARCHAR(18) NOT NULL
-  ,is_active  INTEGER NOT NULL
+  ,is_active  BIT  NOT NULL
 );
 INSERT INTO players(id,full_name,first_name,last_name,is_active) VALUES (2,'Byron Scott','Byron','Scott',0);
 INSERT INTO players(id,full_name,first_name,last_name,is_active) VALUES (3,'Grant Long','Grant','Long',0);
